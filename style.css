@@ -14,6 +14,7 @@ html, body{
     width: 100%;
     background-color: rgb(240, 223, 201);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -21,9 +22,11 @@ html, body{
 #panel{
     height: 80%;
     width: 80%;
+    margin-top: 30px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 4.8px 9.6px 9.6px hsl(0deg 0% 0% / 0.35);
 }
 
 #ptop{
@@ -66,7 +69,6 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -78,4 +80,44 @@ html, body{
 .bubble:hover{
     background-color: rgb(129, 91, 165);
     cursor: pointer;
+}
+
+#btn{
+    margin: 20px;
+    padding: 1rem 1.25rem;
+    font-size: 22px;
+    font-weight: 550;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(145, 216, 198);
+}
+#btn:hover{
+    background-color: rgb(73, 169, 145);
+    box-shadow:  inset 250px 250px 0 rgb(67, 192, 194);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 786px){
+    #ptop{
+        padding: 0 10%;
+    }
+}
+@media only screen and (max-width: 618px){
+    #ptop{
+        padding: 0 5%;
+    }
+    .elem{
+        gap: 15px;
+    }
+}
+@media only screen and (max-width: 521px){
+    .box{
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .elem{
+        display: flex;
+        flex-direction: column;
+    }
 }
