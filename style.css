@@ -121,3 +121,16 @@ html, body{
         flex-direction: column;
     }
 }
+
+@media only screen and (orientation: portrait) {
+    .bubble {
+        background-color: lightblue;
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+    }
+    #pbottom{
+        gap: 5px;
+        padding: 5px;
+    }
+  }
